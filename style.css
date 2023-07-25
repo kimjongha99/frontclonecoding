@@ -3,9 +3,11 @@
 }
 
 html , body,form{
+    line-height: 10.5px;
     margin: 0;
     padding: 0;
     font-size: 10.5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 }
 form, ul {
     margin: 0;
@@ -268,28 +270,149 @@ background-repeat: no-repeat;
    
 }
 
+/* 네비게이션 */
+
+#nav > ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 20px;
+    margin-top: 14px;
+    margin-right: -17px;
+
+}
+
+
+#nav a{
+    text-decoration: none;
+}
+
+#nav a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#nav li{
+    width: 64px;
+    margin-left: 4px;
+    display: flex;
+    margin-right: 20px;
+    white-space: nowrap;
+
+}
+
+#nav a div{
+    width: 44px;
+    height: 44px;
+    margin-bottom: 10px;
+}
 
 
 
 
+#nav a div::after{
+    content: "";
+    display: block;  
+   
+}
+
+/* id없이하는법 */
+#nav li:nth-of-type(1){
+      margin-left: 4px;
+      background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+      background-size: 422px 405px;
+      background-position: -250px -90px;
+      background-repeat: no-repeat;
+      width: 44px;
+      height: 44px;
+
+}
 
 
+#nav li:nth-of-type(2){
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -250px 0px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
 
+}
 
+#nav li:nth-of-type(3){
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -201px -98px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
 
+}
+#nav li:nth-of-type(4){
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -90px -209px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
 
+}
+#nav li:nth-of-type(5){
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: 0px -209px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
 
+}
+#nav li:nth-of-type(6){
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -180px -209px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
 
+}
+#nav li:nth-of-type(7){
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -201px 0px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
 
+}
+#nav li:nth-of-type(8){
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -225px -209px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
 
+}
+#nav li:nth-of-type(9){
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: 0px -209px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
 
+}
 
+#nav li:nth-of-type(10){
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -250px -135px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
 
-
-
-
-
-
+}
 
 
 
