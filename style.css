@@ -1,4 +1,13 @@
-html , body{
+* {
+    box-sizing: border-box;
+}
+
+html , body,form{
+    margin: 0;
+    padding: 0;
+    font-size: 10.5px;
+}
+form, ul {
     margin: 0;
     padding: 0;
 }
@@ -11,7 +20,6 @@ html , body{
 
 #wrap-center{
     width: 1280px;
-    background-color: yellow;
     display: inline-block;
 }
 
@@ -19,23 +27,40 @@ html , body{
 
     height: 2000px;
 }
+
+
+
+
+
+
+
+/* 상단 알림 창 */
+
 #header{
+    position: relative;
     text-align: left;
+    height: 64px;
+
 }
-
-#header-hamburger{
-
-    margin-top: 18px;
+#header-hamburger ,#header-notice,#header-naverpay{
+    position: absolute;
+    top: 18px;
     display: inline-block;
     padding: 10px;
     background: none;
     border: none;
     cursor: pointer;
+}
 
+#header-hamburger{
+    left: -10px;    
 
 }
 
 #header-hamburger >div{
+    z-index: 1;
+    position: relative;
+
     height: 26px;
     width: 26px;
     background-image: url(./img/sp_main.png);
@@ -45,9 +70,319 @@ background-repeat: no-repeat;
 
 }
 
-#header-hamburger:hover{
+#header-hamburger:hover:before{
+    z-index: 0;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 44px;
+    height: 44px;
+    content: '';
     background-color: var(--color_option_bg);
     border-radius: 50%;
+}
+
+#header-naverpay{
+    right: 42px;
+    padding: 10px 8px;
+  
+}
+
+#header-naverpay >div{
+    z-index: 1;
+    position: relative;
+
+    height: 26px;
+    width: 30px;
+    background-image: url(./img/sp_main.png);
+background-size: 422px 405px;
+background-position: -31px -316px;
+background-repeat: no-repeat;
+
+}
+
+#header-naverpay:hover:before{
+    z-index: 0;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 44px;
+    height: 44px;
+    content: '';
+    background-color: var(--color_option_bg);
+    border-radius: 50%;
+}
+
+
+#header-notice{
+    right: -10px;
+}
+
+#header-notice >div{
+    z-index: 1;
+    position: relative;
+
+    height: 26px;
+    width: 26px;
+    background-image: url(./img/sp_main.png);
+background-size: 422px 405px;
+background-position: -364px -27px;
+background-repeat: no-repeat;
+
+}
+
+#header-notice:hover:before{
+    z-index: 0;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 44px;
+    height: 44px;
+    content: '';
+    background-color: var(--color_option_bg);
+    border-radius: 50%;
+}
+
+/* #header-hamburger:hover >div{
+
+    left: 1px;
+    right: 1px;
+    position: relative;
+} */
+
+
+/* 검색창 */
+
+#search > form{
+    height: 60px;
+    width: 708px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+    display: inline-flex;
+    text-align: left;
+    box-shadow: none;
+}
+#search > form:hover{
+    box-shadow:0 2px 4px 0 rgba(0,0,0,.12);
+
+}
+
+#search-svg {
+    display: inline-flex;
+    width: 68px;
+    height: 100%;
+    margin-right: 12px;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+#search-svg::after {
+    display: none;
+}
+#search > form:focus-within #search-svg::after {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 20px;
+}
+#search-svg svg{
+    height: 24px;
+    width: 24px;
+    fill: #03c75a;
+
+}
+
+#search-input{
+    width: 480px;
+    padding: 17px 0;
+    font-size: 2rem;
+    line-height: 24px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+
+}
+#search-input::placeholder {
+    color: white;
+
+  }
+#search-input:focus::placeholder{
+    color:#e4e4e4;
+  }
+
+#search-right{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding: 17px 27px 16px 10px;
+}
+#search-keyboard,#search-recent,#search-button{
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+        }
+
+#search-keyboard::before{
+    content: "";
+    display: block;
+    background-image: url(./img/sp_main.png);
+    background-size: 422px 405px;
+    background-position: -270px -234px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 16px;
+   
+  
+}
+#search-keyboard:hover::before{
+    filter:brightness(0.7) ;
+}
+
+#search-recent::before{
+    content: "";
+    display: block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+    background-size: 422px 405px;
+    background-position: -412px -352px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 6px;
+}
+
+#search-button::before{
+    content: "";
+    display: inline-block;
+    background-image: url(./img/sp_main.png);
+    background-size: 422px 405px;
+    background-position: -364px -132px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
 :root {
     --color_title: #080808;

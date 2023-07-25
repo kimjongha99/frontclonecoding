@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>naver clone</title>
     <link rel="stylesheet" href="style.css">
+
+    
 </head>
 <body>
     <div id="wrap">
@@ -14,12 +16,49 @@
 
             <div id="header">
                 <button id="header-hamburger">
-                    <div>
+                    <!-- ::before -->
+                    <div></div>  
+                    <span class="blind">확장 영역</span>
+                    <!-- 형제 -->
+                    <!-- after -->
+                </button>
+                <button id="header-naverpay">
+                    <!-- ::before -->
+                    <div></div>  
+                    <span class="blind">네이버 페이</span>
+                    <!-- 형제 -->
+                    <!-- after -->
+                </button>
+                <button id="header-notice">
+                    <!-- ::before -->
+                    <div></div>  
+                    <span class="blind">알림
 
-                    </div>
+                    </span>
+                    <!-- 형제 -->
+                    <!-- after -->
                 </button>
             </div>
-            <div id="search"></div>
+            <div id="search">
+                <form action="">
+                    <a id="search-svg" href="#">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path></svg>
+                    </a>
+                    <label for="search-input" class="blind">검색어 입력</label>
+                    <input id="search-input" type="text" placeholder="검색어를 입력하세요." />
+                    <div id="search-right">
+                        <button href="#" id="search-keyboard">
+                            <span class="blind">입력도구</span>
+                        </button>
+                        <button href="#" id="search-recent">
+                            <span class="blind">자동완성/최근검색어펼치기</span>
+                        </button>
+                        <button id="search-button">
+                            <div><span class="blind">검색</span></div>
+                        </button>
+                    </div>
+                </form>
+            </div>
             <div id="nav"></div>
             <div id="main"></div>
 
