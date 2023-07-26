@@ -390,6 +390,34 @@ background-repeat: no-repeat;
     margin-right: 30px;
 }
 
+
+#main-newstand a{
+text-decoration: none;
+}
+
+#main-newstand a{
+    text-decoration: underline;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #main-right{
     width: 420px;
 }
@@ -402,12 +430,75 @@ section[id^=main]{
     margin-top: 16px;
     height: 426px;
 }
+
 #main-login{
     height: 164px;
     margin-bottom: 16px;
+    padding: 21px 20px 18px;
+    font-size: 14.7px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#main-login > div:last-of-type{
+    font-size: 1.3rem;
 
 }
 
+
+
+#main-login > div:last-of-type >a:nth-of-type(2)::before,#main-login > div:last-of-type >a:nth-of-type(2)::after{
+   content: '';
+   display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #d3d5d7;
+    background-color: var(--color_dot_divider);
+    margin: 4px 12px 0;
+
+}
+#main-login>div{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#main-login-button{
+margin-top: 13px ;
+padding: 17px 0;
+height: 56px;
+background-color: #03c75a;
+color:white;
+border: 1px solid rgba(0,0,0,.06);
+border-radius: 4px;
+-webkit-box-shadow: 0 2px 4px 0 rgba(3,199,90,.12);
+box-shadow: 0 2px 4px 0 rgba(3,199,90,.12);
+text-decoration: none;
+ color: #fff;
+}
+
+#main-login-button>i{
+    background-image: url(./sp_main.png);
+    background-size: 422px 405px;
+    background-position: -120px -166px;
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 14px;
+    display: inline-block;
+    margin: 3px 8px 0 0;
+}
+
+#main-login > div:last-of-type a{
+    text-decoration: none;
+
+}
+
+#main-login > div:last-of-type a{
+    color:inherit;
+
+}
 #main-left-ad ,#main-right-ad{
     background: gray;
     border-radius: 8px;    
