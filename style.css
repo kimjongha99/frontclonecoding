@@ -395,15 +395,19 @@ background-repeat: no-repeat;
 text-decoration: none;
 }
 
-#main-newstand a{
-    text-decoration: underline;
-    }
+
+#main-newstand header{
+
+    font-size: 1.6rem;
+    color: rgba(8,8,8,.5);
+}
 
 
 
-
-
-
+#main-newstand header .bold{
+font-weight: bold;
+   
+}
 
 
 
